@@ -171,34 +171,39 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #ddd;
+
+  th, td {
+    padding: 0.50rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
 }
-.table th,
-.table td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+
+.table-centered {
+  th, td, tbody {
+    text-align: center;
+    vertical-align: middle;
+  }
 }
-.table th {
-  background-color: #f2f2f2;
-}
-.table-centered th,
-.table-centered td,
-.table-centered tbody {
-  text-align: center;
-  vertical-align: middle;
-}
+
 .pagination {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  button {
+    margin: 0 0.375rem;
+  }
 }
-.pagination button {
-  margin: 0 5px;
-}
+
 </style>

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img class="logo" src="../assets/logo.png"></img>
+    <img class="logo" src="../assets/logo.png"/>
     <h1>Review Portal</h1>
 
   </header>
@@ -18,13 +18,13 @@ header {
   color: white;
   padding: 1rem;
   text-align: center;
-  max-height: 70px;
+  max-height: 4.50rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .logo{
-  max-width: 50px;
-  margin-right: 10px;
+  max-width: 3.125rem;
+  margin-right: 0.625rem;
 }
 </style>
