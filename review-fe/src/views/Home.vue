@@ -42,7 +42,7 @@
               <tr v-for="(movie, index) in paginatedMovies" :key="index">
                 <router-link
                   :to="`/movie/${movie.id}`"
-                  target="_blank"
+                  
                   style="text-decoration: none"
                 >
                   <td class="text-center">

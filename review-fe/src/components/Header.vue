@@ -1,18 +1,21 @@
 <template>
   <header>
-    <img class="logo" src="../assets/logo.png"/>
-    <h1>Review Portal</h1>
-
+    <RouterLink class="header-link" to="/">
+      <img class="logo" src="../assets/logo.png"/>
+      <h1>Review Portal</h1>
+    </RouterLink>
   </header>
 </template>
 
 <script>
+import { RouterLink } from 'vue-router'
+
 export default {
   name: "Header",
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 header {
   background-color: #333;
   color: white;
@@ -26,5 +29,15 @@ header {
 .logo{
   max-width: 3.125rem;
   margin-right: 0.625rem;
+}
+
+.header-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
 }
 </style>
